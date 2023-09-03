@@ -1,0 +1,41 @@
+Uso: docker container COMMAND
+
+	Gerenciar contêineres
+
+# COMANDOS:
+#
+# attach 	# Anexa fluxos de entrada, saída e erro padrão local a um contêiner em execução
+# commit 	# Crie uma nova imagem a partir das alterações de um contêiner
+# cp 	  	# Copia arquivos/pastas entre um contêiner e o sistema de arquivos local
+# create 	# Criar um novo contêiner
+# diff   	# Inspecione alterações em arquivos ou diretórios no sistema de arquivos de um contêiner
+# exec   	# Executa um comando em um contêiner em execução
+# export 	# Exportar o sistema de arquivos de um contêiner como um arquivo tar
+# inspect   # Exibir informações detalhadas sobre um ou mais contêineres
+# kill      # Elimina um ou mais contêineres em execução
+# logs      # Busca os logs de um contêiner
+# ls        # Lista contêineres
+# pause     # Pausa todos os processos em um ou mais contêineres
+# port      # Lista mapeamentos de portas ou um mapeamento específico para o contêiner
+# prune     # Remover todos os contêineres parados
+# rename    # Renomear um contêiner
+# restart   # Reinicie um ou mais contêineres
+# rm 		# Remova um ou mais contêineres
+# run 		# Crie e execute um novo contêiner a partir de uma imagem
+# start 	# Inicia um ou mais contêineres parados
+# stats 	# Exibe uma transmissão ao vivo de estatísticas de uso de recursos de contêineres
+# stop 		# Para um ou mais contêineres em execução
+# top 		# Exibir os processos em execução de um contêiner
+# unpause 	# Reinicia todos os processos dentro de um ou mais contêineres
+# update 	# Atualizar configuração de um ou mais contêineres
+# wait 		# bloquear até que um ou mais contêineres parem e imprima seus códigos de saída
+
+** Execute 'docker container COMMAND --help' para obter mais informações sobre um comando. **
+
+
+
+
+
+
+
+

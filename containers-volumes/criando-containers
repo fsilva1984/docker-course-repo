@@ -1,0 +1,36 @@
+
+**	CRIANDO CONTAINERS E USANDO FLAG'S **
+
+# Criar um container apartir de uma imagem
+ 	docker container run <image> ex: debian
+ 
+# Criar um container e interagir com o terminal do container
+	docker container run -ti <image>
+	
+# Criar um container e determina qual o shell voce usara dentro do container
+	docker container run -ti <image> bash ou zsh
+
+# Criar um container e deixalo rodando em background
+	docker container run -d <image>
+
+# Criar um container e definir uma porta de execução
+ 	docker container run -p host:container <image> ex: 8080:80
+ 	a porta 8080 da host vai receber a porta 80 docontainer
+
+# Criar um container e exibe a porta em que o container estara disponivel
+	docker container run -P <imagem> 
+
+# Criar um container e definir a quantidade de memoria ram ele poderar usar
+	docker container run -m <imagem> ex: -m 128M
+
+# Criar um container e definir a porcentagem ou a quantidade de cpu ele poderar usar
+	docker container run --cpus <imagem> ex: --cpus 0.5 ou --cpus 2
+
+
+
+
+
+
+
+
+

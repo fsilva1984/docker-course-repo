@@ -1,0 +1,54 @@
+
+#  ** CRIANDO VOLUMES NA HOST PARA USO DOS CONTAINERS **  
+
+
+# docker create <nome-volume>
+#  Ex: docker create project_dir
+# 
+# criando um container e definindo o caminho do volume
+# Ex: docker container run --mount type=volume,src=project_dir,dst=/home debian
+#
+# IMPORTANTE:
+# quando damos o comando create o docker cria o volume em
+# /var/lib/docker/volumes/<nome-volume>/_data
+# note que apos o volume ser criado, tambem e criado um diretorio
+# dentro dele com o nome _data.
+# E nesse _data que colocamos nossas aplicações arquivos e etc..
+#
+# falando um pouco sobrer as flags usadas para definir o caminho do volume
+# para o container na hora da criação.
+#
+#	1 "--mount" para dizer ao docker o que ele vai fazer
+#	2 "type" que mostra para o docker o tipo de volume que vai ser configurado no
+#	  container, sendo que temos dois tipos o "bind" e o "volume", a diferença entre
+#	  eles e que o tipo bind vai pegar um volume que ja esteja criado ou seja, um
+#	  diretorio da  host que sera definido por você, eo tipo "volme" que e criado
+#	  com o comando "docker create" ese tipo nao precisa definir um caminho quando
+#	  estiver criando um container, porque o docker ja tem um caminho pre-definido
+#	  para volumes criados.
+#
+#	3 "src" indica onde o docker vai buscar o volume para ser definido nas
+#	  configurações do novo container, se o tipo for bind o "src" precisa mostra
+#	  o caminho para o docker, mas se o tipo for volume o "src" mostara para o docker
+#	  apenas o nome do volume, ex: -- mount, type=bind, src=/home/project_dir ou 
+#	  -- mount, type=volume, src=project_dir.
+#
+#	4 "dst" o dist indica para o docker onde o volume sera montado no container
+	  Ex: -- mount, type=volume, src=project_dir, dst=/opt/project_dir.
+#  
+# docker volume ls listando os volumes
+# docker volume rm <name-volume> remove volume
+# docker volume prune remove todos os volumes
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+
+Uso: COMANDO de volume do docker
+
+Gerenciar volumes
+
+Comandos:
+ 
+# create  # Criar um volume
+# inspect # Exibir informações detalhadas sobre um ou mais volumes
+# ls 	  # Lista os volumes
+# prune   # Remove todos os volumes locais não utilizados
+# rm 	  # Remova um ou mais volumes
+
+Execute 'docker volume COMMAND --help' para obter mais informações sobre um comando.
