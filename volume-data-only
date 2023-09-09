@@ -1,0 +1,39 @@
+
+
+## criando um container para adiministrar o volume ##
+
+
+# O debian sera o administrador do volume
+
+docker conainer run --name dbase -m 128M --cpus 0.5 --mount type=volume,src=devops,dst=/home -ti debian 
+
+
+# criando o primeiro cliente do dbase.
+
+ docker conainer run -d --name client001 -m 128M --cpus 0.5 --mount type=volume,src=devops,dst=/usr/share/nginx/html nginx
+ 
+
+# Apos criado os dados de destino do cliente estara disponiveis la no volume devops que sera administrado pelo container administrador.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
