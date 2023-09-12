@@ -1,0 +1,13 @@
+
+## usando um container para backups ##
+
+# containers podem ser usados para backups de arquivos. !
+
+# ex: criaremos um container baseado no debian para guardar esses backups
+# docker container create --mount type=bind,src=/home/Devops,dst=/opt/backups debian
+#
+#
+#
+
+
+
