@@ -1,0 +1,18 @@
+
+
+## copiando um diretorio para dentro do container 
+
+docker cp path/file/ my_container:/path/destination
+
+## copiando todos os arquivos do atual diretorio para dentro do container
+
+docker cp ./ my_container:/path/destination
+
+## copiando um diretorio para fora do container 
+
+docker cp my_container:/path/dir /path/dir/destination
+
+
+## copiando todo arquivos do diretorio atual para fora do container 
+
+docker cp my_container:./ /path/dir/destination
