@@ -1,0 +1,15 @@
+#
+#	Aqui estaão alguns exempplos de como criar um arquivo Dockerfile
+#	
+#	No diretorio 1  temos um exemplo de dockerfile para a criação de uma image
+#	para a futura criação de um container, e executar arquivos python.
+#
+#	No diretorio 2  temos um exemplo de dockerfile para a criação de uma image
+#	para a futura criação de um container, e executar arquivos javascript.
+#
+#	No diretorio 3  temos um exemplo de dockerfile para a criação de uma image
+#	para a futura criação de um container, e a execução de um servidor web.
+#
+#
+#
+

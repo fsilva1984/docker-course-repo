@@ -1,0 +1,10 @@
+
+
+# Esse dockerfile cria uma image minida do python 
+# para executar pequenos programas em python
+#
+# quando executar um container usar a tag --rm
+
+
+
+

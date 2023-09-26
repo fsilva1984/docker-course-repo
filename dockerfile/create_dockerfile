@@ -1,0 +1,39 @@
+
+# como escrever um Dockerfile
+
+ escrita de texto comum
+
+# principains tag de um dockerfile
+
+1 -	FROM indica em qual image o arquivo se beseara . ex: debian
+
+1.2	RUN executa comandos na hora de buildar a image. ex: apt update
+
+# tags secundarias mas de grande importancia
+
+1 -	WORKDIR Essa instrução tem o propósito de definir o nosso ambiente de
+trabalho. Com ela, definimos onde as instruções CMD, RUN, ENTRYPOINT, ADD e COPY
+executarão suas tarefas, além de definir o diretório padrão que será aberto ao 
+executarmos o container.
+
+1.2 -	COPY copia arquivos e diretorios para area do container
+
+1.3 -	ADD adiciona para area do container, downloads, extrai arquivos tar para o container
+copia arquivos e diretorios.
+
+2 -	ENV cria variaveis de ambiente
+
+2.1 -	VOLUME Essa instrução cria uma pasta em nosso container que será compartilhada entre o
+ container e o host, funcionando do seguinte modo:
+
+2.2 -	LABEL adiciona labels ao container, podendo ser vosto com o comando inspect
+
+2.3 -	CMD determina a principal função do container
+
+3 -	ENTRYPOINT	faz o mesmo papel do CMD mas se os dois forem postos juntos 
+no mesmo arquivo o CMD carregara apenas parametros para o principal comando
+determinado no ENTRYPOINT.
+
+3.1 -	EXPOSE expõe uma porta para o container
+
+
