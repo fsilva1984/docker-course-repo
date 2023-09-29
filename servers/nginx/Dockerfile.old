@@ -1,0 +1,7 @@
+FROM httpd:alpine
+
+WORKDIR /var/www
+
+RUN apk update
+
+EXPOSE 80

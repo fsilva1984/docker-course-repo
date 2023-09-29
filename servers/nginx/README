@@ -1,0 +1,62 @@
+#			* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+#
+#		Usando a image httpd:alpine, o diretorio padrão de onde o apache2 servi
+#		os arquivos html por exemplo esta em /usr/local/apache2/htdocs.
+#			
+#		O arquivo de principal processo do apache2 esta em /usr/local/apache2/bin/apachectl. 
+#		em um arquivo dockerfile pode dar ao CMD o parametro /usr/local/apache2/bin/apachectl start
+#		mas se por algum motivo der erro retire o "start" 
+#
+#		Mas o padrão pode ser alterdo no arquivo de configuração do Apache, /etc/apache2/apache2.conf
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
