@@ -1,0 +1,37 @@
+
+O arquivo entrypoint.sh é um script que é executado quando um contêiner Docker é iniciado. Ele é usado para inicializar a aplicação ou serviço que está sendo executado no contêiner.
+
+O arquivo entrypoint.sh pode ser usado para fazer uma variedade de coisas, incluindo:
+
+    Instalar dependências
+    Iniciar um processo
+    Configurar o ambiente
+
+O arquivo entrypoint.sh é executado antes de qualquer comando que você especificar usando o comando docker run. Se você especificar um comando no docker run, ele será executado após o entrypoint.sh terminar.
+
+Aqui está um exemplo de um arquivo entrypoint.sh que instala o Node.js e inicia o servidor web de um aplicativo Node.js:
+
+#!/bin/bash
+
+# Instalar o Node.js
+apt-get update && apt-get install -y nodejs
+
+# Iniciar o servidor web
+node app.js
+
+Para usar o arquivo entrypoint.sh, você precisa colocá-lo no diretório raiz da sua imagem Docker. Você pode fazer isso usando o comando docker build:
+
+docker build -t my-image .
+
+Em seguida, você pode iniciar o contêiner usando o comando docker run:
+
+docker run my-image
+
+O arquivo entrypoint.sh pode ser substituído usando o parâmetro --entrypoint do comando docker run. Isso permite que você use um script personalizado para inicializar o seu contêiner.
+
+Aqui está um exemplo de como usar o parâmetro --entrypoint:
+
+docker run --entrypoint my-entrypoint.sh my-image
+
+Neste exemplo, o arquivo my-entrypoint.sh será executado em vez do arquivo entrypoint.sh padrão.
+
