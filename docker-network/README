@@ -1,0 +1,20 @@
+
+
+###  Criando uma rede para um servico ##
+
+## Criacao:
+
+# docker network create -d overlay <Nome-da-rede>
+
+
+## Adicionando um servico a rede
+
+# docker service create --name data-web -p 8080:80 --network <nome-da-rede-criada-anteriormente> nginx
+
+
+## Add um container a uma rede
+
+# docker container run -dti -p 8088:80 --network-add <nome-da-rede> apache2
+
+
+

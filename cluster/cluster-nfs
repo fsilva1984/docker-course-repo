@@ -1,0 +1,23 @@
+# * * * * * * * * * * * * * * * * * ** * * * * * * * * * * * * * * * * *# 
+#									#	
+#									#
+#	### Criação de um cluster e criação de um nfs-server ###	#
+#									#
+#									#
+#	NFS-SERVER							#
+#									#
+#	Instalar e configurar o servidor NFS				#
+#	Criar um diretorio de compartilhamento.				#									#									#
+# 	IMAGE DOCKER 							#
+#									#
+#	Na criação da image ja criamos um diretorio de trabalho.	#
+#									#
+#	CONTAINER DOCKER						#
+#									#
+#	Na criação do container devemos conectar o diretorio de		#
+#	compartilhamento do servidor NFS ao diretorio de trabalho	#
+#	do container							#
+#									#
+#									#
+# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * #
+
