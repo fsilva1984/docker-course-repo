@@ -23,3 +23,7 @@ echo "          VOLUME"
 sleep 2
 sudo docker volume ls
 echo
+echo "          SECRET"
+sleep 2
+sudo docker secret ls
+
