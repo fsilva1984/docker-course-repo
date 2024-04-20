@@ -1,0 +1,9 @@
+
+# rode o comando yum update
+
+- caso receba algum erro
+
+- rode o comando abaixo
+
+sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-Linux-*
+sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-Linux-*
